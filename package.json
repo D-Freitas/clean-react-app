@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "This project is a favorable configuration for applying Architectural pattern",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/D-Freitas/clean-react-app.git"
@@ -25,6 +29,8 @@
     "eslint-plugin-promise": "^5.2.0",
     "eslint-plugin-react": "^7.28.0",
     "git-commit-msg-linter": "^4.0.7",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3",
     "typescript": "^4.5.5"
   }
 }
